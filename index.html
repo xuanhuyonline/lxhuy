@@ -1,9 +1,364 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-</head>
-<body>
-	<h1>Hello Chim Huy</h1>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Bài ôn tập</title>
+	<!-- <link rel="stylesheet" href="abc.css"> -->
+	<style>
+		*{
+			background-color: Silver;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		li{
+			float: left;	
+
+		}
+
+		li a, .dropbtn {
+			display: inline-block;
+			color: Black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;;
+
+		}
+
+		li a:hover, .dropdown:hover .dropbtn{
+			background-color: blue;
+			color: White;
+		}
+
+		.col-66{
+			float: left;
+			width: 66.66%;
+		}
+
+		.col-33{
+			float: left;
+			width: 33.33%;
+		}
+
+		.col-50{
+			float: left;
+			width: 50%;
+		}
+
+		img{
+			height: 46px;
+			
+		}
+		nav {
+			overflow: hidden;
+			height: 46px;
+			border-bottom: 1px solid Black;
+
+		}
+
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.anhhai{
+			width: 100%;
+			height: 200px;
+			margin: 10px 0px;
+
+		}
+		.lienhe{
+			color: blue;
+			padding-bottom: 10px;
+			border-bottom: 2px solid blue;
+		}
+		label{
+			padding: 12px 12px 5px 0;
+			display: inline-block;
+		}
+
+		input[type=text], textarea{
+			background: white;
+			width: 70%;
+			padding: 12px;
+			border: 1px solid White;
+			border-radius: 3px;
+			resize: vertical;
+		}
+
+		input[type=submit]
+		{
+			background-color: blue;
+			padding: 10px;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			float: left;
+		}
+
+		.col-25 {
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+
+		.col-75 {
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+		h3{
+			color: blue;
+			padding: 6px;
+			border-bottom: 2px solid blue;
+			margin-top: 0;
+			margin-right: 3px;
+			width: 90%;
+		}
+
+		.dropdown{
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 200px;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			border: 1px solid Gray;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ed812b;
+			color: white;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		table{
+			width: 95%;
+			margin: 0 5px;
+			border-collapse: collapse;
+		}
+
+		th{
+			background: Gray;
+		}
+
+		td{
+			background: White;
+		}
+
+		table,td,th{
+			border:1px solid black;
+			text-align: center;
+		}
+
+		.col-20-img{
+			float: left;
+			width: 20%;
+			overflow: hidden;
+
+		}
+		.col-20-img img {
+			padding: 8px 8px;
+		}
+
+		.col-33 .content {
+			border-left: 2px solid blue;
+			padding-left: 10px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="col-33" ><img src="b.png"></div>
+			<div class="col-66">
+				<ul>
+					<li><a href="#">GIỚI THIỆU</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">GIÀY DA NAM</a>
+						<div class="dropdown-content">
+							<a href="#">Giày công sở</a>
+							<a href="#">Giày Loafer</a>
+							<a href="#">Giày buột dây</a>
+							<a href="#">Giày cao cổ</a>
+							<a href="#">Giày Đang Khuyến Mãi</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">BÁN BUÔN CÔNG TÁC VIÊN</a>
+						<div class="dropdown-content">
+							<a href="#">Bán Buôn</a>
+							<a href="#">Chính sách dành cho công tác viên</a>
+						</div>
+					</li>
+					<li><a href="#">CHÍNH SÁCH MUA BÁN</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="col-66">
+			<div class="row">
+				<div class="col-50" >
+					<div class="row">
+						<img class="anhhai" src="a.jpg">
+					</div>
+					<div class="row">
+						<div class="col-20-img">
+							<img class="anhhai" src="a.jpg">
+						</div>
+						<div class="col-20-img">
+							<img class="anhhai" src="a.jpg">
+						</div>
+						<div class="col-20-img">
+							<img class="anhhai" src="a.jpg">
+						</div>
+						<div class="col-20-img">
+							<img class="anhhai" src="a.jpg">
+						</div>
+						<div class="col-20-img">
+							<img class="anhhai" src="a.jpg">
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="col-50">
+					<h2>GIÀY CÔNG SỞ CS105PTD</h2>
+					<p><b>Mã: C5105PTO</b></p>
+					<ul style="width: 80%">
+						<li> <i class="fa fa-check" style="color: green;"></i>Thương hiệu</li><br>
+						<li><i class="fa fa-check" style="color: green;"></i>Kích thước Size: 38-39-40-41-42-43</li>
+						<li><i class="fa fa-check" style="color: green;"></i>Chất lượng da giày: Da bò Mỹ nguyên tấm rất giày và mềm cực kì thoải mái khi đi</li>
+						<li><i class="fa fa-check" style="color: green;"></i>Chất liệu đế giày: Đế phíp mềm có thể bẻ cong, có kẹp sắt dưới để dễ tránh gẫy. Độ chống mài mòn cao.</li>
+						<li><i class="fa fa-check" style="color: green;"></i>Giá cũ:<del><b> 1.150.000 vnđ</b></del></li>
+					</ul>
+					<div style="margin-top: 5px;">
+						<span>Giá bán:</span><h4 style="color: red; display: inline;">1.150.000 vnđ</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h3 style="width: 90%">SẢN PHẨM KHÁC</h3>
+			</div>
+		</div>
+
+
+		<div class="col-33">
+			<div class="content">
+				<div class="row">
+				<h3 class="lienhe">LIÊN HỆ</h3>
+				<form>
+					<div class="row">
+						<div class="col-25">
+							<label for="td">Tiêu đề</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="tieude" id="td" placeholder="Tiêu đề">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="ht">Họ tên</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="hoten" id="ht" placeholder="Họ và tên">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="dt">Điện thoại</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="dienthoai" id="dt" placeholder="Số điện thoại">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="yk">Ý kiến</label>
+						</div>
+						<div class="col-75">
+							<textarea id="yk" name="ykien" placeholder="Ý kiến..." style="height: 30px;"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label> </label>
+						</div>
+						<div class="col-75">
+							<input type="submit" value="Gửi ý kiến">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row sizeGiay">
+				<h4>Quy đổi size giày Nam</h4>
+				<table>
+					<tr>
+						<th>Size US 10</th>
+						<td>Size VN 43</td>
+						<td>Inches 10.5625</td>
+						<td>Certimet 27</td>
+					</tr>
+					<tr>
+						<th>11</th>
+						<td>44</td>
+						<td>10.9375</td>
+						<td>27.9</td>
+					</tr>
+					<tr>
+						<th>12</th>
+						<td>45</td>
+						<td>11.25</td>
+						<td>28.6</td>
+					</tr>
+					<tr>
+						<th>13</th>
+						<td>46</td>
+						<td>11.5625</td>
+						<td>29.4</td>
+					</tr>
+					<tr>
+						<th>14</th>
+						<td>47</td>
+						<td>11.875</td>
+						<td>30.2</td>
+					</tr>
+					<tr>
+						<th>15</th>
+						<td>48</td>
+						<td>12.1875</td>
+						<td>31</td>
+					</tr>
+					<tr>
+						<th>16</th>
+						<td>49</td>
+						<td>12.5</td>
+						<td>31.8</td>
+					</tr>
+				</table>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
 </body>
 </html>
